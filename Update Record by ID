@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+struct Employee {
+    int id;
+    float salary;
+};
+
+int main() {
+    int n, i, uid;
+    struct Employee e[10];
+
+    scanf("%d", &n);
+
+    for(i = 0; i < n; i++)
+        scanf("%d %f", &e[i].id, &e[i].salary);
+
+    scanf("%d", &uid);
+
+    for(i = 0; i < n; i++) {
+        if(e[i].id == uid) {
+            scanf("%f", &e[i].salary);
+            printf("Updated Salary = %.2f", e[i].salary);
+            return 0;
+        }
+    }
+    printf("Record not found");
+    return 0;
+}
