@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    float expense, total = 0;
+    int n, i;
+    scanf("%d", &n);
+
+    for(i = 1; i <= n; i++) {
+        scanf("%f", &expense);
+        total += expense;
+    }
+    printf("Total Monthly Expense = %.2f", total);
+    return 0;
+}
