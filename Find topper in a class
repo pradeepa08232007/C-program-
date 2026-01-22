@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+    int n, i, marks[10], max, pos;
+    scanf("%d", &n);
+
+    for(i = 0; i < n; i++)
+        scanf("%d", &marks[i]);
+
+    max = marks[0];
+    pos = 1;
+    for(i = 1; i < n; i++) {
+        if(marks[i] > max) {
+            max = marks[i];
+            pos = i + 1;
+        }
+    }
+    printf("Topper: Student %d with %d marks", pos, max);
+    return 0;
+}
