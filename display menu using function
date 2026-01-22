@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+void menu() {
+    printf("1. Add\n2. Subtract\n3. Multiply\n4. Divide\n");
+}
+
+int main() {
+    menu();
+    return 0;
+}
