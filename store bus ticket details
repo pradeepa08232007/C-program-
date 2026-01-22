@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+struct ticket {
+    int ticketNo;
+    float fare;
+};
+
+int main() {
+    struct ticket t;
+    printf("Enter ticket number and fare: ");
+    scanf("%d %f", &t.ticketNo, &t.fare);
+
+    printf("Ticket No: %d Fare: %.2f\n", t.ticketNo, t.fare);
+    return 0;
+}
