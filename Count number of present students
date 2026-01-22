@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int n, present = 0, status, i;
+    scanf("%d", &n);
+
+    for(i = 1; i <= n; i++) {
+        scanf("%d", &status); // 1-present, 0-absent
+        if(status == 1)
+            present++;
+    }
+    printf("Present students = %d", present);
+    return 0;
+}
